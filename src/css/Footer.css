@@ -1,0 +1,15 @@
+footer {
+    background-color: #ff85d5;
+    /* Color de fondo del footer */
+    color: black;
+    /* Color de texto del footer */
+    padding: 20px 0;
+    /* Espaciado interior superior e inferior */
+}
+
+footer a {
+    color: black;
+    /* Color de enlaces dentro del footer */
+    text-decoration: none;
+    /* Quita el subrayado de los enlaces */
+}
