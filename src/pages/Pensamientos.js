@@ -70,51 +70,24 @@ function Albuml() {
 
                 <div className="mb-3">
                     <label htmlFor="titulo" className="form-label"></label>
-                    <textarea
-                        className="form-control is-invalid text-center"
-                        onChange={(e) => handle(e)}
-                        id="titulo"
-                        value={data.titulo}
-                        placeholder="Titulo"
-                        required
-                    ></textarea>
+                    <textarea className="form-control is-invalid" onChange={(e) => handle(e)} id="titulo" value={data.titulo} placeholder="Titulo" required></textarea>
                     <div className="invalid-feedback"></div>
                 </div>
 
                 <div className="mb-3">
                     <label htmlFor="descripcion" className="form-label"></label>
-                    <textarea
-                        className="form-control is-invalid text-center"
-                        onChange={(e) => handle(e)}
-                        id="descripcion"
-                        value={data.descripcion}
-                        placeholder="Descripcion"
-                        required
-                    ></textarea>
+                    <textarea className="form-control is-invalid" onChange={(e) => handle(e)} id="descripcion" value={data.descripcion} placeholder="Descripcion" required></textarea>
                     <div className="invalid-feedback"></div>
                 </div>
 
                 <div className="mb-3">
                     <label htmlFor="eventoImg" className="form-label"></label>
-                    <input
-                        type="file"
-                        className="form-control text-center"
-                        aria-label="file example"
-                        onChange={(e) => handle(e)}
-                        id="eventoImg"
-                        required
-                    />
+                    <input type="file" className="form-control" aria-label="file example" onChange={(e) => handle(e)} id="eventoImg" required />
                     <div className="invalid-feedback"></div>
-                </div>
+                </div><br></br>
 
-                <div className="mb-3 text-center">
-                    <button
-                        type="submit"
-                        className="btn btn-primary"
-                        style={{ background: "#ffffff", border: '1px solid #000', color: "#000" }}
-                    >
-                        Enviar pensamiento
-                    </button>
+                <div className="mb-3">
+                    <button type="submit" className="btn btn-primary" style={{ background: "#ffffff", border: '1px solid #000', color: "#000" }}>Enviar pensamiento</button>
                 </div>
             </form>
         </div>
