@@ -36,10 +36,10 @@ function Pensamientos() {
                 {loading ? (
                     <p>Cargando...</p>
                 ) : (
-                    <div className='row'>
+                    <div className='row justify-content-center my-4'>
                         {data.map((item) => (
-                            <div key={item._id} className='col-sm-4' style={{ margin: '16px 0' }}>
-                                <div className="card h-100" style={{ width: '18rem', borderRadius: '10px', border: '1px solid' }}>
+                            <div key={item._id} className='col-md-4 col-sm-6' style={{ margin: '16px 0' }}>
+                                <div className="card mb-5" style={{ height: '446px', borderRadius: '10px', border: '1px solid' }}>
                                     <img
                                         src={item.imagen.urlImg}
                                         alt={item.titulo}

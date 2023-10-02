@@ -50,13 +50,11 @@ function Inicio() {
 
             <div style={backgroundStyle}>
 
-                <div className='container'>
+                <div className='container'><br></br><br></br>
                     <div className='row justify-content-center my-4'>
-                        <div className='col-sm-4'>
-                            <div className="card" style={{
-                                width: '18rem', minHeight: '100%', borderRadius: '10px', border: '1px solid'
-                            }}>
-                                <img src={aleja1} alt="" style={{ height: '200px', objectFit: 'cover' }} />
+                        <div className='col-md-4 col-sm-6'>
+                            <div className="card mb-5" style={{ height: '400px', borderRadius: '10px', border: '1px solid' }}>
+                                <img src={aleja1} alt="" style={{ height: '240px', objectFit: 'cover' }} />
                                 <div className="card-body">
                                     <h5>Sé tu propia inspiración</h5>
                                     <p className="card-text">Cree en ti misma. Eres más valiente de lo que crees, más talentosa de lo que sabes y capaz de más de lo que imaginas.</p>
@@ -64,9 +62,9 @@ function Inicio() {
                             </div>
                         </div>
 
-                        <div className='col-sm-4'>
-                            <div className="card" style={{ width: '18rem', minHeight: '100%', borderRadius: '10px', border: '1px solid' }}>
-                                <img src={aleja2} alt="" style={{ height: '200px', objectFit: 'cover' }} />
+                        <div className='col-md-4 col-sm-6'>
+                            <div className="card mb-5" style={{ height: '400px', borderRadius: '10px', border: '1px solid' }}>
+                                <img src={aleja2} alt="" style={{ height: '240px', objectFit: 'cover' }} />
                                 <div className="card-body">
                                     <h5>El éxito es un viaje</h5>
                                     <p className="card-text">El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito.</p>
@@ -74,9 +72,9 @@ function Inicio() {
                             </div>
                         </div>
 
-                        <div className='col-sm-4'>
-                            <div className="card" style={{ width: '18rem', minHeight: '100%', borderRadius: '10px', border: '1px solid' }}>
-                                <img src={aleja3} alt="" style={{ height: '200px', objectFit: 'cover' }} />
+                        <div className='col-md-4 col-sm-6'>
+                            <div className="card mb-5" style={{ height: '400px', borderRadius: '10px', border: '1px solid' }}>
+                                <img src={aleja3} alt="" style={{ height: '240px', objectFit: 'cover' }} />
                                 <div className="card-body">
                                     <h5>El poder de la perseverancia</h5>
                                     <p className="card-text">No importa cuantas veces caigas, lo importante es cuantas veces te levantes.</p>
@@ -85,12 +83,12 @@ function Inicio() {
                         </div>
                     </div>
 
-                    <div className='p-4'></div>
+                    <div className='p-1'></div>
 
                     <div className='row justify-content-center my-4'>
-                        <div className='col-sm-4'>
-                            <div className="card" style={{ width: '18rem', minHeight: '100%', borderRadius: '10px', border: '1px solid' }}>
-                                <img src={aleja4} alt="" style={{ height: '200px', objectFit: 'cover' }} />
+                        <div className='col-md-4 col-sm-6'>
+                            <div className="card mb-5" style={{ height: '400px', borderRadius: '10px', border: '1px solid' }}>
+                                <img src={aleja4} alt="" style={{ height: '240px', objectFit: 'cover' }} />
                                 <div className="card-body">
                                     <h5>Avanza hacia tus sueños</h5>
                                     <p className="card-text">El camino hacia el éxito y la grandeza no es una línea recta. Tiene curvas, obstáculos y momentos difíciles, pero vale la pena cada paso.</p>
@@ -98,9 +96,9 @@ function Inicio() {
                             </div>
                         </div>
 
-                        <div className='col-sm-4'>
-                            <div className="card" style={{ width: '18rem', minHeight: '100%', borderRadius: '10px', border: '1px solid' }}>
-                                <img src={aleja5} alt="" style={{ height: '200px', objectFit: 'cover' }} />
+                        <div className='col-md-4 col-sm-6'>
+                            <div className="card mb-5" style={{ height: '400px', borderRadius: '10px', border: '1px solid' }}>
+                                <img src={aleja5} alt="" style={{ height: '240px', objectFit: 'cover' }} />
                                 <div className="card-body">
                                     <h5>Supérate a ti misma</h5>
                                     <p className="card-text">Recuerda que cada día es una nueva oportunidad para ser mejor. No te rindas</p>
@@ -108,9 +106,10 @@ function Inicio() {
                             </div>
                         </div>
 
-                        <div className='col-sm-4'>
-                            <div className="card" style={{ width: '18rem', minHeight: '100%', borderRadius: '10px', border: '1px solid' }}>
-                                <img src={aleja6} alt="" style={{ height: '200px', objectFit: 'cover' }} />
+
+                        <div className='col-md-4 col-sm-6'>
+                            <div className="card mb-5" style={{ height: '400px', borderRadius: '10px', border: '1px solid' }}>
+                                <img src={aleja6} alt="" style={{ height: '240px', objectFit: 'cover' }} />
                                 <div className="card-body">
                                     <h5>Enfócate en el presente</h5>
                                     <p className="card-text">No importa cuánto tiempo te tome llegar allí, lo importante es que sigas avanzando hacia tus metas.</p>
@@ -119,7 +118,6 @@ function Inicio() {
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </>
