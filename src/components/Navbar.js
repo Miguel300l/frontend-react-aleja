@@ -5,7 +5,7 @@ function Navbar() {
         <>
             <nav className="navbar navbar-expand-lg navbar-light " style={{ background: '#ff85d5' }}>
                 <div className="container-fluid">
-                    <Link className="navbar-brand" style={{ marginLeft: '140px' }} >ARDNAJELA</Link>
+                    <Link className="navbar-brand" style={{ marginLeft: '110px' }} >ARDNAJELA</Link>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
