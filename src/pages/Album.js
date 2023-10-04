@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 
 function Pensamientos() {
-    const url = "https://backend-alejandra.vercel.app/verEventos"; // Cambia la URL según tu API
+    const url = "https://backend-alejandra.vercel.app/verEventos";
+    const urll = "https://backend-alejandra.vercel.app"; // Cambia la URL según tu API
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [pensamientoEliminado, setPensamientoEliminado] = useState(false);
 
     useEffect(() => {
         // Realizar una solicitud GET a la API o servidor cuando el componente se monte
@@ -18,6 +20,22 @@ function Pensamientos() {
                 setLoading(false);
             });
     }, []);
+
+    function eliminarEvento(id) {
+        Axios.delete(`${urll}/eliminarEvento/${id}`)
+            .then(() => {
+                // Actualizar la lista de tarjetas después de eliminar una
+                const updatedData = data.filter(item => item._id !== id);
+                setData(updatedData);
+                setPensamientoEliminado(true); // Mostrar el mensaje de pensamiento eliminado
+                setTimeout(() => {
+                    setPensamientoEliminado(false); // Ocultar el mensaje después de 3 segundos
+                }, 3000);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    }
 
     const backgroundStyle = {
         backgroundImage: 'url("https://dropsfamilygarden.com/wp-content/uploads/2023/05/black-oil-sunflower.jpg")',
@@ -50,12 +68,13 @@ function Pensamientos() {
                                         <p className="card-text">{item.descripcion}</p>
                                     </div>
                                 </div>
+                                <button className="btn btn-danger" style={{ marginTop: "-60px", border: '1px solid', color: "black" }} onClick={() => eliminarEvento(item._id)}>Eliminar</button>
                             </div>
                         ))}
                     </div>
-
-
                 )}
+                {/* Mostrar la alerta de pensamiento eliminado */}
+                {pensamientoEliminado && <div className="alert alert-success">Pensamiento eliminado</div>}
             </div>
         </div>
     );
