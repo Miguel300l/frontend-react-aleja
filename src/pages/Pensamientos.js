@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Axios from 'axios';
 
 function Albuml() {
-    const url = "https://backend-alejandra-git-main-miguel300l.vercel.app/crearEventos";
+    const url = "https://backend-alejandra.vercel.app/crearEventos";
     const [data, setData] = useState({
         titulo: "",
         descripcion: "",
